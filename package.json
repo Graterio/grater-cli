@@ -12,6 +12,7 @@
     "@oclif/config": "^1.6.33",
     "@oclif/plugin-help": "^2.0.5",
     "@types/lodash": "^4.14.111",
+    "@types/signale": "^1.2.0",
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
     "node-notifier": "^5.2.1",
