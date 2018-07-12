@@ -24,7 +24,7 @@ $ npm install -g grater-cli
 $ grater COMMAND
 running command...
 $ grater (-v|--version|version)
-grater-cli/1.0.0 darwin-x64 node-v10.0.0
+grater-cli/1.1.0 darwin-x64 node-v10.0.0
 $ grater --help [COMMAND]
 USAGE
   $ grater COMMAND
@@ -35,6 +35,7 @@ USAGE
 <!-- commands -->
 * [`grater endpointData CANONICALNAME FIELDS`](#grater-endpoint-data-canonicalname-fields)
 * [`grater help [COMMAND]`](#grater-help-command)
+* [`grater info`](#grater-info)
 
 ## `grater endpointData CANONICALNAME FIELDS`
 
@@ -54,7 +55,7 @@ OPTIONS
   -s, --skip=skip    how many documents to skip
 ```
 
-_See code: [src/commands/endpointData.ts](https://github.com/Graterio/grater-cli/blob/v1.0.0/src/commands/endpointData.ts)_
+_See code: [src/commands/endpointData.ts](https://github.com/Graterio/grater-cli/blob/v1.1.0/src/commands/endpointData.ts)_
 
 ## `grater help [COMMAND]`
 
@@ -72,4 +73,18 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
+
+## `grater info`
+
+view Grater.io Endpoint info
+
+```
+USAGE
+  $ grater info
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/info.ts](https://github.com/Graterio/grater-cli/blob/v1.1.0/src/commands/info.ts)_
 <!-- commandsstop -->

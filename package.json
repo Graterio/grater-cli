@@ -1,7 +1,7 @@
 {
   "name": "grater-cli",
   "description": "CLI Interface to Grater.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Mitch Masia <mitch@grater.io>",
   "bin": {
     "grater": "./bin/run"
