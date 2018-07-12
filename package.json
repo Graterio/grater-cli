@@ -1,7 +1,7 @@
 {
   "name": "grater-cli",
   "description": "CLI Interface to Grater.io",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "Mitch Masia <mitch@grater.io>",
   "bin": {
     "grater": "./bin/run"
@@ -55,7 +55,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "masiamj/grater-cli",
+  "repository": "https://github.com/Graterio/grater-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
     "posttest": "tsc -p test --noEmit && tslint -p test -t stylish",
