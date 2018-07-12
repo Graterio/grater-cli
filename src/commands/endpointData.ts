@@ -1,4 +1,5 @@
 import * as _ from 'lodash'
+import * as jsome from 'jsome'
 import * as signale from 'signale'
 import {Command, flags} from '@oclif/command'
 import api from '../api'
@@ -52,14 +53,14 @@ export default class EndpointData extends Command {
         signale.complete(`${equals}\n`)
         signale.success(`${successEquals} SUCCESSFUL RESPONSE! ${successEquals}`)
         console.log('\n')
-        console.log(data.data.data)
+        jsome(data.data.data)
         console.log('\n')
         logger.logRequestLinks()
       })
       .catch(error => {
         signale.error(`${equals}\n`)
         signale.error(`${failedEquals} FAILED RESPONSE! ${failedEquals}\n`)
-        console.log(error.response.data)
+        jsome(error.response.data)
         console.log('\n')
         logger.logRequestLinks()
       })
