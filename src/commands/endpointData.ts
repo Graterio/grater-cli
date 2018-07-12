@@ -1,6 +1,5 @@
 import * as _ from 'lodash'
 import * as signale from 'signale'
-import * as notifier from 'node-notifier'
 import {Command, flags} from '@oclif/command'
 import api from '../api'
 import Environment from '../Environment'
@@ -55,13 +54,14 @@ export default class EndpointData extends Command {
         console.log('\n')
         console.log(data.data.data)
         console.log('\n')
+        logger.logRequestLinks()
       })
       .catch(error => {
         signale.error(`${equals}\n`)
         signale.error(`${failedEquals} FAILED RESPONSE! ${failedEquals}\n`)
         console.log(error.response.data)
         console.log('\n')
+        logger.logRequestLinks()
       })
-      .finally(logger.logRequestLinks)
   }
 }

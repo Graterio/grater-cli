@@ -15,7 +15,6 @@
     "@types/signale": "^1.2.0",
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
-    "node-notifier": "^5.2.1",
     "signale": "^1.2.1",
     "tslib": "^1.9.3"
   },
